@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movier</title>
+        <!-- css -->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+        <!-- scripts -->
+        <script type="text/javascript" data-main="assets/main" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>        
+    </head>
+    <body style="margin:0; padding:0; height:100%; width:100%; overflow:auto;">
+    	<!-- Main Div -->
+    	<div id="main" >				
+            <div id="bigsearch">            
+    		    <!-- Header Div -->
+    		    <div id="header" style="position:absolute; top:0px" >	
+				   Head                
+			    </div>                
+    		    <!-- Center Div -->
+    	        <div id="center" style="position:absolute; top:190px; left:200px; min-width:800px; min-height:300px; text-align:center; overflow:hidden;">	
+				    <img src="assets/img/movienight.png" alt="mainimage" ></br>
+                    <input type="radio" name="queryelement" value="actor" checked>Actor
+                    <input type="radio" name="queryelement" value="movie">Movie </br>
+        		    <input id="queryinput" name="query" size="90">
+			    </div>
+			    <!-- Footer Div -->
+			    <div id="footer" style="position:absolute; bottom:0px" >	
+				    Foot
+			    </div>	
+            </div>
+            <div id="smallsearch" style="display:none">            
+                <!-- Header Div -->                
+                <div id="smallsearchheader" style="position:absolute; top:0px" >                     
+                    <img id="small" src="assets/img/movienight146x75.png" alt="mainimage" >                    
+                    <input id="smallsearchqueryinput" name="query" size="90">              
+                    <input type="radio" name="smallsearchqueryelement" value="actor">Actor
+                    <input type="radio" name="smallsearchqueryelement" value="movie">Movie </br>      
+                </div>
+                <div id="smallsearchoptionsheader" style="position:absolute; left:750px; top:70px" >                                         
+                    <button id="sortButton" type="button"> Older Movies First! </button>
+                </div>
+                <!-- Left Actor Div -->
+                <div id="smallsearchactordetail" style="position:absolute; top:100px; width:200px; min-height:300px; overflow:hidden;">                      
+                    <img id="actorpicture" alt="actorimage" ></br>
+                    <p id="actorname"></p>                    
+                    <p id="actorbirthday"></p>
+                    <p id="actorplace_of_birth"></p>                    
+                    <p id="actorhomepage"></p>
+                </div>
+                <!-- Left Actor Div -->
+                <div id="smallsearchmoviedetail" style="display:none; position:absolute; top:100px; min-width:800px; min-height:300px; overflow:hidden;">            
+                    <img id="moviepicture" alt="actorimage" ></br>
+                    <p id="movietitle"></p>                    
+                    <p id="movierelease_date"></p>
+                    <p id="movieoverview"></p>                    
+                </div>
+                <!-- Center Div -->
+                <div id="smallsearchlist" style="position:absolute; top:100px; left:200px; min-width:800px; min-height:300px; overflow:hidden;">  
+                    Hola
+                </div>
+                <!-- Footer Div -->
+                <div id="smallsearchfooter" style="position:absolute; bottom:0px" >    
+                    Foot
+                </div>  
+            </div>	
+		</div>
+    </body>
+</html>
